@@ -1,16 +1,41 @@
-@font-face{
-    font-family: 'Moniker-Bold';
-    src: local('Fonts/Moniker-Bold.woff') format('woff');
+@font-face {
+    font-family: 'Moniker Regular';
+    src: local('Moniker Regular'),
+         local('MonikerRegular'),
+         url('../Fonts/Moniker-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
     font-family: 'Moniker';
-    src: url('file:./Fonts/Moniker-Regular.woff') format('woff');
+    src: local('Moniker'),
+         url('../Fonts/Moniker-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+         url('../Fonts/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'),
+         url('../Fonts/Roboto-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
 }
 html {
     background-color: #1F2937;
 }
 body {
-    font-family: 'Moniker';
+    font-family: 'Moniker Regular';
+    font-weight: normal;
+    font-style: normal;
     display: flex;
     flex-direction: column;
     flex: auto;
@@ -45,6 +70,7 @@ a {
 }
 
 .header .logo {
+    font-family: 'Roboto';
     font-weight: bold;
     font-size: 24px;
     color: #F9FAF8;
@@ -98,6 +124,7 @@ a {
     margin-right: 28px;
 }
 .info-header{
+    font-family: 'Roboto';
     color: #E5E7EB;
     font-size: 36px;
     font-weight: bold;
