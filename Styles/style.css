@@ -200,16 +200,21 @@ a {
     background-color: #E5E7EB;
     flex: auto;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     padding:150px;
 }
 .quote {
     font-style: italic;
     font-size: 36px;
     margin-bottom: 15px;
+    max-width: 1000px;
+    min-width: 300px;
 }
 .author {
+    display: flex;
+    flex-grow:1;
+    flex-basis: auto;
+    justify-content: flex-end;
     font-weight: bold;
     font-size: 22px;
 }
