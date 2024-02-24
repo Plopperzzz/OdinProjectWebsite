@@ -1,10 +1,10 @@
 @font-face{
     font-family: 'Moniker-Bold';
-    src: local('Fonts/Moniker-Bold.ttf');
+    src: local('Fonts/Moniker-Bold.woff') format('woff');
 }
 @font-face {
     font-family: 'Moniker';
-    src: url('file:./Fonts/Moniker-Regular.ttf') format('truetype');
+    src: url('file:./Fonts/Moniker-Regular.woff') format('woff');
 }
 html {
     background-color: #1F2937;
