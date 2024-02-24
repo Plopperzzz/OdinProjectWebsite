@@ -1,7 +1,6 @@
 @font-face {
-    font-family: 'Moniker Regular';
-    src: local('Moniker Regular'),
-         local('MonikerRegular'),
+    font-family: 'Moniker';
+    src: local('Moniker'),
          url('../Fonts/Moniker-Regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
@@ -31,16 +30,16 @@
 }
 html {
     background-color: #1F2937;
+    padding:  0 100px;
 }
 body {
-    font-family: 'Moniker Regular';
+    font-family: 'Moniker';
     font-weight: normal;
     font-style: normal;
     display: flex;
     flex-direction: column;
     flex: auto;
     height: 100vh;
-    padding: 0 200px;
     margin: 0;
 }
 
@@ -57,7 +56,6 @@ li {
 a {
     text-decoration: none;
     color:#E5E7EB;
-    cursor: zoom-out;
 }
 
 .header {
@@ -77,6 +75,8 @@ a {
 }
 
 .header .links {
+    font-family: 'Moniker';
+    font-weight: normal;
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -119,24 +119,45 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex:auto;
     margin-right: 28px;
 }
+
 .info-header{
     font-family: 'Roboto';
-    color: #E5E7EB;
-    font-size: 36px;
+    color: #F9FAF8;
+    font-size: 48px;
     font-weight: bold;
+}
+
+.info {
+    font-family: 'Moniker';
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .image {
     display: flex;
-    background-color: #9b9c9c;
+    background-color: #696b6b;
+    font-family: 'Moniker';
     color: #E5E7EB;
     font-size: 16px;
     justify-content: center;
+    flex-shrink: 0;
     align-items: center;
     height: 300px;
-    width: 700px;
+    width: 500px;
+}
+
+.button {
+    padding: 3px 28px;
+    margin-top: 12px;
+    font-weight: bold;
+    font-family: 'Moniker';
+    font-size: 18px;
+    color: #E5E7EB;
+    background-color: #3882F6;
+    border-color: transparent;
+    border-radius: 7px;
 }
